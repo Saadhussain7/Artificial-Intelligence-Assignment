@@ -1,0 +1,478 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a9dd0011-5a30-4631-a250-2c617b1af20f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "                                                                Strings "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "bee00867-7af3-4c76-85c4-6c85f7a3b78b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original string: Hello, World!\n",
+      "First character: H\n",
+      "Last character: !\n",
+      "Sliced string (2nd to 5th characters): ello\n",
+      "Length of the string: 13\n",
+      "Concatenated string: Hello, World! How are you?\n",
+      "Repeated string: Hello, World!Hello, World!Hello, World!\n",
+      "Formatted string: My name is Alice and I am 30 years old.\n",
+      "Uppercase: HELLO, WORLD!\n",
+      "Lowercase: hello, world!\n",
+      "Replace: Hello, Python!\n",
+      "Split: ['Hello', ' World!']\n",
+      "Substring 'Hello' found in the string.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Define a string variable\n",
+    "my_string = \"Hello, World!\"\n",
+    "\n",
+    "# Print the string\n",
+    "print(\"Original string:\", my_string)\n",
+    "\n",
+    "# Access individual characters in the string\n",
+    "print(\"First character:\", my_string[0])  # Prints 'H'\n",
+    "print(\"Last character:\", my_string[-1])  # Prints '!'\n",
+    "\n",
+    "# Slicing the string\n",
+    "print(\"Sliced string (2nd to 5th characters):\", my_string[1:5])  # Prints 'ello'\n",
+    "\n",
+    "# String length\n",
+    "print(\"Length of the string:\", len(my_string))\n",
+    "\n",
+    "# Concatenation\n",
+    "another_string = \" How are you?\"\n",
+    "concatenated_string = my_string + another_string\n",
+    "print(\"Concatenated string:\", concatenated_string)\n",
+    "\n",
+    "# String repetition\n",
+    "repeated_string = my_string * 3\n",
+    "print(\"Repeated string:\", repeated_string)\n",
+    "\n",
+    "# String formatting\n",
+    "name = \"Alice\"\n",
+    "age = 30\n",
+    "formatted_string = \"My name is {} and I am {} years old.\".format(name, age)\n",
+    "print(\"Formatted string:\", formatted_string)\n",
+    "\n",
+    "# String methods\n",
+    "print(\"Uppercase:\", my_string.upper())  # Converts to uppercase\n",
+    "print(\"Lowercase:\", my_string.lower())  # Converts to lowercase\n",
+    "print(\"Replace:\", my_string.replace(\"World\", \"Python\"))  # Replaces substring\n",
+    "print(\"Split:\", my_string.split(\",\"))  # Splits the string into a list based on the separator\n",
+    "\n",
+    "# Checking if a substring is present\n",
+    "if \"Hello\" in my_string:\n",
+    "    print(\"Substring 'Hello' found in the string.\")\n",
+    "else:\n",
+    "    print(\"Substring 'Hello' not found in the string.\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5d2590ff-ac3b-4a17-8a2b-9237ed911355",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "                                                            Data Types"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "6d4f7378-dcbc-43ee-8403-2993626194cf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Integer: 10\n",
+      "Float: 3.14\n",
+      "String: Hello, World!\n",
+      "Boolean: True\n",
+      "List: [1, 2, 3, 4, 5]\n",
+      "Tuple: (6, 7, 8, 9, 10)\n",
+      "Dictionary: {'apple': 5, 'banana': 3, 'orange': 2}\n",
+      "Set: {1, 2, 3, 4, 5}\n",
+      "NoneType: None\n",
+      "Complex: (2+3j)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Integer\n",
+    "my_integer = 10\n",
+    "print(\"Integer:\", my_integer)\n",
+    "\n",
+    "# Float\n",
+    "my_float = 3.14\n",
+    "print(\"Float:\", my_float)\n",
+    "\n",
+    "# String\n",
+    "my_string = \"Hello, World!\"\n",
+    "print(\"String:\", my_string)\n",
+    "\n",
+    "# Boolean\n",
+    "my_boolean = True\n",
+    "print(\"Boolean:\", my_boolean)\n",
+    "\n",
+    "# List\n",
+    "my_list = [1, 2, 3, 4, 5]\n",
+    "print(\"List:\", my_list)\n",
+    "\n",
+    "# Tuple\n",
+    "my_tuple = (6, 7, 8, 9, 10)\n",
+    "print(\"Tuple:\", my_tuple)\n",
+    "\n",
+    "# Dictionary\n",
+    "my_dict = {\"apple\": 5, \"banana\": 3, \"orange\": 2}\n",
+    "print(\"Dictionary:\", my_dict)\n",
+    "\n",
+    "# Set\n",
+    "my_set = {1, 2, 3, 4, 5}\n",
+    "print(\"Set:\", my_set)\n",
+    "\n",
+    "# NoneType\n",
+    "my_none = None\n",
+    "print(\"NoneType:\", my_none)\n",
+    "\n",
+    "# Complex\n",
+    "my_complex = 2 + 3j\n",
+    "print(\"Complex:\", my_complex)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "33124b0f-1369-4416-8f41-7651ad9d3386",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "                                                            LOOP "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "c1945fbe-6d4f-4dc3-9ae6-71ad5ddbe12e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "For loop:\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "\n",
+      "While loop:\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "\n",
+      "Looping through a list:\n",
+      "apple\n",
+      "banana\n",
+      "cherry\n",
+      "date\n",
+      "\n",
+      "Looping through a dictionary:\n",
+      "apple : 3\n",
+      "banana : 2\n",
+      "cherry : 5\n",
+      "\n",
+      "Nested loops:\n",
+      "i = 0 , j = 0\n",
+      "i = 0 , j = 1\n",
+      "i = 1 , j = 0\n",
+      "i = 1 , j = 1\n",
+      "i = 2 , j = 0\n",
+      "i = 2 , j = 1\n",
+      "\n",
+      "Loop control statements:\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "\n",
+      "Loop with else block:\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "Loop completed without a break statement.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# For loop\n",
+    "print(\"For loop:\")\n",
+    "for i in range(5):  # Iterates from 0 to 4\n",
+    "    print(i)\n",
+    "\n",
+    "# While loop\n",
+    "print(\"\\nWhile loop:\")\n",
+    "count = 0\n",
+    "while count < 5:\n",
+    "    print(count)\n",
+    "    count += 1\n",
+    "\n",
+    "# Looping through a list\n",
+    "print(\"\\nLooping through a list:\")\n",
+    "my_list = [\"apple\", \"banana\", \"cherry\", \"date\"]\n",
+    "for fruit in my_list:\n",
+    "    print(fruit)\n",
+    "\n",
+    "# Looping through a dictionary\n",
+    "print(\"\\nLooping through a dictionary:\")\n",
+    "my_dict = {\"apple\": 3, \"banana\": 2, \"cherry\": 5}\n",
+    "for key, value in my_dict.items():\n",
+    "    print(key, \":\", value)\n",
+    "\n",
+    "# Nested loops\n",
+    "print(\"\\nNested loops:\")\n",
+    "for i in range(3):\n",
+    "    for j in range(2):\n",
+    "        print(\"i =\", i, \", j =\", j)\n",
+    "\n",
+    "# Loop control statements\n",
+    "print(\"\\nLoop control statements:\")\n",
+    "for i in range(10):\n",
+    "    if i == 3:\n",
+    "        continue  # Skip iteration when i equals 3\n",
+    "    if i == 8:\n",
+    "        break  # Exit loop when i equals 8\n",
+    "    print(i)\n",
+    "\n",
+    "# Loop with else block\n",
+    "print(\"\\nLoop with else block:\")\n",
+    "for i in range(5):\n",
+    "    print(i)\n",
+    "else:\n",
+    "    print(\"Loop completed without a break statement.\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e3f5ad12-7cf6-4d55-8583-2a05185090e8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "                                                      IF ELSE CONDITION"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "7475d08e-aee0-4504-b54c-cfcccebb8f0d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "x is greater than 5\n",
+      "y is greater than 5 but not greater than 10\n",
+      "z is divisible by 3 but not by 2\n",
+      "Maximum number between a and b is: 10\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Define a variable\n",
+    "x = 10\n",
+    "\n",
+    "# If-else condition\n",
+    "if x > 5:\n",
+    "    print(\"x is greater than 5\")\n",
+    "else:\n",
+    "    print(\"x is not greater than 5\")\n",
+    "\n",
+    "# Nested if-else\n",
+    "y = 7\n",
+    "if y > 10:\n",
+    "    print(\"y is greater than 10\")\n",
+    "elif y > 5:\n",
+    "    print(\"y is greater than 5 but not greater than 10\")\n",
+    "else:\n",
+    "    print(\"y is not greater than 5\")\n",
+    "\n",
+    "# Multiple conditions\n",
+    "z = 15\n",
+    "if z % 2 == 0 and z % 3 == 0:\n",
+    "    print(\"z is divisible by both 2 and 3\")\n",
+    "elif z % 2 == 0:\n",
+    "    print(\"z is divisible by 2 but not by 3\")\n",
+    "elif z % 3 == 0:\n",
+    "    print(\"z is divisible by 3 but not by 2\")\n",
+    "else:\n",
+    "    print(\"z is neither divisible by 2 nor by 3\")\n",
+    "\n",
+    "# Using ternary operator\n",
+    "a = 8\n",
+    "b = 10\n",
+    "max_num = a if a > b else b\n",
+    "print(\"Maximum number between a and b is:\", max_num)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "be06e2fd-7529-43d0-a383-98bf364012e0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "                                                        Functions"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "3f8e200e-f974-475d-8222-733088a41bf5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The sum is: 8\n"
+     ]
+    }
+   ],
+   "source": [
+    "def add_numbers(num1, num2):\n",
+    "    sum = num1 + num2\n",
+    "    return sum\n",
+    "\n",
+    "# Example usage:\n",
+    "result = add_numbers(5, 3)\n",
+    "print(\"The sum is:\", result)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5312f83d-61c1-4f3a-a0d2-a097da1a6e61",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "                                                        Classes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "7d9d6e5a-223d-4d25-b1e7-478fbb7c0005",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Owner: John Doe\n",
+      "Initial balance: 1000\n",
+      "Deposit of $500 accepted. Current balance: $1500\n",
+      "Withdrawal of $200 accepted. Current balance: $1300\n",
+      "Insufficient funds!\n"
+     ]
+    }
+   ],
+   "source": [
+    "class BankAccount:\n",
+    "    def __init__(self, owner, balance=0):\n",
+    "        self.owner = owner\n",
+    "        self.balance = balance\n",
+    "\n",
+    "    def deposit(self, amount):\n",
+    "        self.balance += amount\n",
+    "        print(f\"Deposit of ${amount} accepted. Current balance: ${self.balance}\")\n",
+    "\n",
+    "    def withdraw(self, amount):\n",
+    "        if amount <= self.balance:\n",
+    "            self.balance -= amount\n",
+    "            print(f\"Withdrawal of ${amount} accepted. Current balance: ${self.balance}\")\n",
+    "        else:\n",
+    "            print(\"Insufficient funds!\")\n",
+    "\n",
+    "    def get_balance(self):\n",
+    "        return self.balance\n",
+    "\n",
+    "# Example usage:\n",
+    "account = BankAccount(\"John Doe\", 1000)\n",
+    "print(\"Owner:\", account.owner)\n",
+    "print(\"Initial balance:\", account.get_balance())\n",
+    "\n",
+    "account.deposit(500)\n",
+    "account.withdraw(200)\n",
+    "account.withdraw(1500)  # Should print \"Insufficient funds!\"\n",
+    "                                                         "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a97385ea-27f4-4833-ba48-a49319bb9eea",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "50d36914-5d35-41d4-add8-86c404da48a7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
